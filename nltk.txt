@@ -1,3 +1,5 @@
 wordnet
 stopwords
-WordNetLemmatizer
+pros_cons
+reuters
+omw-1.4
