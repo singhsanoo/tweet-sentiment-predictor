@@ -75,17 +75,17 @@ def predict():
     tweet = remove_punct(tweet)
     tweet = tokenizer.tokenize(tweet.lower())
     # tweet = remove_sw(tweet)
-    tweet = word_lemmatizer(tweet)
+    # tweet = word_lemmatizer(tweet)
 
     # 3. Transform each input using the scaler function.
     print('vectorizing')
     tweet_vectorized = vectorizer.transform(tweet)
 
     print('making prediction')
-    # prediction_prob = np.round(model_lrc.predict_proba(tweet_vectorized)[0], 2) * 100
+    prediction_prob = np.round(model_lrc.predict_proba(tweet_vectorized)[0], 2) * 100
 
-    # prediction_text = f'Negative:  {prediction_prob[0]}% \n Positive:  {prediction_prob[1]}% '
-    prediction_text = tweet
+    prediction_text = f'Negative:  {prediction_prob[0]}% \n Positive:  {prediction_prob[1]}% '
+    # prediction_text = tweet
     return render_template('index.html', prediction_text=prediction_text, features=request.form.values())
 
 
