@@ -14,11 +14,14 @@ app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0 # Helps to avoid cache problems
 
 # Load the model from its pickle file.
+print('loading model_sgd')
 model_sgd = load(open('clf.pkl', 'rb'))
 
+print('loading model_lrc')
 model_lrc = load(open('lrc.pkl', 'rb'))
 
 # Load the scaler from its pickle file.
+print('loading model_vertorizer')
 vertorizer = load(open('TfidV.pkl','rb'))
 
 # Remove punctuation
@@ -52,31 +55,37 @@ def word_lemmatizer(text):
 # Define the index route
 @app.route('/')
 def home():
+    print('this is index')
     return render_template('index.html')
 
 # Define a route that runs when the user clicks the Predict button in the web-app
 @app.route('/predict', methods=['POST'])
 def predict():
+    print('this is predict')
     # Define prediction labels.
     predict_labels = ['Negative', 'Positive']
 
 
-    # tweet = [request.form.values()]
+    print('reading tweet')
     tweet = request.form.values()
     # text = request.form.values()
 
     #2. Tokenizing etc
+    print('tokenizing')
     tweet = remove_punct(tweet)
     tweet = tokenizer.tokenize(tweet.lower())
     tweet = remove_sw(tweet)
     tweet = word_lemmatizer(tweet)
 
     # 3. Transform each input using the scaler function.
+    print('vectorizing')
     tweet_vectorized = vertorizer.transform(tweet)
 
-    prediction_prob = np.round(model_lrc.predict_proba(tweet_vectorized)[0], 2) * 100
+    print('making prediction')
+    # prediction_prob = np.round(model_lrc.predict_proba(tweet_vectorized)[0], 2) * 100
 
-    prediction_text = f'Negative:  {prediction_prob[0]}% \n Positive:  {prediction_prob[1]}% '
+    # prediction_text = f'Negative:  {prediction_prob[0]}% \n Positive:  {prediction_prob[1]}% '
+    prediction_text = tweet
     return render_template('index.html', prediction_text=prediction_text, features=request.form.values())
 
 
