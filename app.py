@@ -74,7 +74,7 @@ def predict():
     print('tokenizing')
     tweet = remove_punct(tweet)
     tweet = tokenizer.tokenize(tweet.lower())
-    # tweet = remove_sw(tweet)
+    tweet = remove_sw(tweet)
     # tweet = word_lemmatizer(tweet)
 
     # 3. Transform each input using the scaler function.
