@@ -21,8 +21,8 @@ print('loading model_lrc')
 model_lrc = load(open('lrc.pkl', 'rb'))
 
 # Load the scaler from its pickle file.
-print('loading model_vertorizer')
-vertorizer = load(open('TfidV.pkl','rb'))
+print('loading model_vertocizer')
+vectorizer = load(open('TfidV.pkl','rb'))
 
 # Remove punctuation
 def remove_punct(text):
@@ -79,7 +79,7 @@ def predict():
 
     # 3. Transform each input using the scaler function.
     print('vectorizing')
-    tweet_vectorized = vertorizer.transform(tweet)
+    tweet_vectorized = vectorizer.transform(tweet)
 
     print('making prediction')
     # prediction_prob = np.round(model_lrc.predict_proba(tweet_vectorized)[0], 2) * 100
