@@ -1,17 +1,11 @@
-/* ---------------------------------------------
+
+/* --------------------------------------------- */
 /* Navbar */
-.nav {
-    font-weight: bold;
-    width: 100%;
-}
-.a.navbar-brand {
-    color: black;
-}
-.button.navbar-toggler {
-    background-color: black;
-}
-.navbar-toggler {
-    color: black;
+a.navbar-brand {
+    color: aqua;
+    
+
+/* ---------------------------------------------
 }
 .button {
     background-color: transparent;
@@ -19,36 +13,20 @@
     border:#ffffff;
 
 
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Body */
+.top-space {
+    margin-bottom: 150px;
+}
+.title{
+    font-size: large;
 }
 
-.container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;} */
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-/* ---------------------------------------------- */
-/* ---------------------------------------------- */
-/* Body */
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
 
 #page-content {
     float: left;
@@ -75,7 +53,7 @@
     background-color: #fff;
   }
   
-  .text-muted-footer {
+.text-muted-footer {
     /* Positioning */
     margin-top: 15px;
   
@@ -83,7 +61,7 @@
     color: #fff;
   }
   
-  .two-toned-footer-color {
+.two-toned-footer-color {
     /* Box-model */
     height: 6px;
     padding-top: 3px;
@@ -91,4 +69,8 @@
     /* Visual */
     background-color: #3ca5fb;
   }
+
+  /* --------------------------------------------- */
+
   /* ---------------------------------------------- */
+

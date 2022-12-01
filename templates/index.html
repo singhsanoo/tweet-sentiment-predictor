@@ -20,32 +20,41 @@
 
 </head>
 
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html" style="color: #3ca5fb; padding-left: 10px; font-size: 25px;" >Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="/templates/index.html" >Tweet Sentiment Predictor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="/templates/word_c.html">Word Collage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="/templates/team.html">Team</a>
+        </li>
 
-<body>
-<nav class="navbar navbar-dark bg-primaryt"></nav> 
-  <div class="container-fluid navbar-custom">
-      <div class="col-md-8">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-target="#navbarNavAltMarkup" data-toggle="collapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Word Collage</a>
-              <a class="nav-item nav-link" href="#">Team</a>
-            </div>
-          </div>
-      </div>
+      </ul>
     </div>
-</nav>
+  </nav>
+</header>
+<body>
 
+  <style>
+    body {
+      background-image: url('/Resources/twitter_logos_top_r_corner.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+  <div class="top-space">
 
-
-
-
-
-
+  </div>
+  <div class="container">
 
   <style>
     body {
@@ -60,7 +69,10 @@
 
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Twitter Sentiment Type</h1>
+        <h1 style="font-size: 100px;">Twitter Sentiment Type</h1>
+        <div class="spacer-1" style="padding-block: 25px;">
+
+        </div>
         <h3>Enter your tweet into the box to see predicted Sentiment!</h3>    
         <br>
       </div>
@@ -72,19 +84,22 @@
 
       <!-- Use a Jinja if-statement to fill the previous values from the Flask server if data has been entered -->
       <div class="row">
+        <div class="spacer-2" style="padding-block:25px;">
 
+        </div>
         <div class="col-md-6">
-          <H5 class="text-end">Tweet Input</H5>
+          <H5 class="text-end" style="font-size: 50px">Tweet Input</H5>
           <br>
         </div>      
 
         <div class="col-md-6">
-          <input type="text" name="tweet-input" id="tweet-input" placeholder="tweet-input" required="required" {% if features %} value= "" {% endif %} />
+
+          <input type="text" name="tweet-input" id="tweet-input" style="height:65px; width: 250px; font-size: 25px; border-radius: 15px;" placeholder="tweet-input" required="required" {% if features %} value="" {% endif %} />
+
           <br>
         </div>      
 
       </div>
-
       <div class="row">
         <div class="col-md-4">          
         </div>
@@ -92,14 +107,19 @@
         <div class="col-md-2">
           <br>
           <br>
-          <button type="submit" class="btn btn-primary">Predict</button>
+          <button type="submit" class="btn btn-primary" style="height:90px; width: 90px; font-size: 40px; margin-left: -100px; background-color: white; border: 3px solid black;border-radius: 15px; padding-bottom: 13px;"><img src="/Resources/verification-mark.png" alt="" height="50px" width="50px"> </button>
+          <div>
+
+          </div>
         </div>
 
         <div class="col-md-6">
           <br>
           <br>
-          <H5>{{ prediction_text }}</H5>
+
+          <H5 style="font-size: 50px; margin-left: 50px;">{{ prediction_text }}</H5>
           <H5>{{ features }}</H5>
+
         </div>
 
       </div>
@@ -108,19 +128,26 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+
 </body>
-<!-- Start footer -->
-        <footer class="footer navbar-fixed-bottom">
-            <div class="two-toned-footer-color"></div>
-            <p class="text-muted text-muted-footer text-center"> 
-              Machine Learning Tweet Sentiment Predictor
-            </p>
-        </footer>
+
         
-        <!-- jQuery CDN -->
-        <script type="text/javascript" hef="#" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- jQuery CDN -->
+<script type="text/javascript" hef="#" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   
-        <!-- Bootstrap CDN -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Start footer -->
+<footer class="footer navbar-fixed-bottom">
+  <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center"> 
+           Machine Learning Tweet Sentiment Predictor
+      </p>
+</footer>
+
+
+
 
 </html>
