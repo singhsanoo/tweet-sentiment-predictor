@@ -1,13 +1,25 @@
-.navbar-brand {
-    position: center;
+/* --------------------------------------------- */
+/* Navbar */
+a.navbar-brand {
+    color: aqua;
+    
 }
 
 
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Body */
+.top-space {
+    margin-bottom: 150px;
+}
+.title{
+    font-size: large;
+}
 
 
-
-
-
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Footer */
 .footer {
     /* Positioning */
     position: absolute;
@@ -22,7 +34,7 @@
     background-color: #fff;
   }
   
-  .text-muted-footer {
+.text-muted-footer {
     /* Positioning */
     margin-top: 15px;
   
@@ -30,7 +42,7 @@
     color: #fff;
   }
   
-  .two-toned-footer-color {
+.two-toned-footer-color {
     /* Box-model */
     height: 6px;
     padding-top: 3px;
@@ -38,3 +50,4 @@
     /* Visual */
     background-color: #3ca5fb;
   }
+  /* --------------------------------------------- */
