@@ -6,19 +6,22 @@ a.navbar-brand {
 }
 
 /* ---------------------------------------------
-}
-.button {
-    background-color: transparent;
-    color: white;
-    border:#ffffff;
-
+/* Header */
+.two-toned-header-color {
+    /* Box-model */
+    height: 6px;
+    padding-bottom: 3px;
+  
+    /* Visual */
+    background-color: #3ca5fb;
+  }
 
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 /* Body */
 .top-space {
-    margin-bottom: 150px;
+    margin-bottom: 2%;
 }
 .title{
     font-size: large;
@@ -31,7 +34,7 @@ a.navbar-brand {
 #page-content {
     float: left;
     position: relative;
-    left: 50%;
+    margin-left: -5%;
 }
 
 
@@ -48,6 +51,7 @@ a.navbar-brand {
     width: 100%;
     height: 60px;
     margin-top: 30px;
+    left: 0%;
   
     /* Visual */
     background-color: #fff;
