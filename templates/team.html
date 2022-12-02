@@ -55,46 +55,80 @@
   
       <div class="row">
         <div class="col-md-12 text-center">
-          <h1>Twitter Sentiment Type</h1>
-          <h3>Enter your tweet into the box to see predicted Sentiment!</h3>    
-          <br>
-        </div>
-      </div>
-  
-      <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
-      <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
-      <form action="{{url_for('predict')}}" method="post">
-  
-        <!-- Use a Jinja if-statement to fill the previous values from the Flask server if data has been entered -->
-        <div class="row">
-  
-          <div class="col-md-6">
-            <H5 class="text-end">Tweet Input</H5>
-            <br>
-          </div>      
-  
-          <div class="col-md-6">
-            <input type="text" name="tweet-input" id="tweet-input" placeholder="tweet-input" required="required" {% if features %} value="" {% endif %} />
-            <br>
-          </div>      
-  
-        </div>
-  
-        <div class="row">
-          <div class="col-md-4">          
+          <!-- team starts -->
+        <section class="team section-padding" id="team">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                  <div style="padding: 5%;">
+                      <div class="section-header text-center pb-5">
+                          <h2>Our Team</h2>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card text-center">
+                          <div class="card-body">
+                              <img alt="" class="img-fluid rounded-circle" src="https://ca.slack-edge.com/T03F8BUKY9W-U03K55QUTV3-31342aa3618a-512">
+                              <h3 class="card-title py-2" style="font-size:20px;">Brandon Groenewold</h3>
+                          <br>
+                              <h5 class="name" name="brandon">Comapay agents house</h5><h7>is a long established fact that eader&nbsp; will be distracted by the readable content.</h7>
+                          </br>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card text-center">
+                          <div class="card-body">
+                              <img alt="" class="img-fluid rounded-circle" src="https://ca.slack-edge.com/T03F8BUKY9W-U03KC8Q7AM6-6af7631f42fa-512">
+                              <h3 class="card-title py-2" style="font-size: 20px;">Jon Kwiatkowski</h3>
+                              <br>
+                              <h5 class="profile" name="jon">Comapay agents house</h5><h7>is a long established fact that eader&nbsp; will be distracted by the readable content.</h7>
+                          </br>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card text-center">
+                          <div class="card-body">
+                              <img alt="" class="img-fluid rounded-circle" src="https://ca.slack-edge.com/T03F8BUKY9W-U03JZQY2X2B-4a0d09927fca-512">
+                              <h3 class="card-title py-2" style="font-size:20px;">Sanoo Singh</h3>
+                              <br>
+                              <h5 class="profile" name="sanoo">Comapay agents house</h5><h7>is a long established fact that eader&nbsp; will be distracted by the readable content.</h7>
+                          </br>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card text-center">
+                          <div class="card-body">
+                              <img alt="" class="img-fluid rounded-circle" src="https://ca.slack-edge.com/T03F8BUKY9W-U03KXSMMXEU-506af424c960-512">
+                              <h3 class="card-title py-2" style="font-size:20px;">Nhan Tran</h3>
+                              <br>
+                              <h5 class="profile" name="nhan">Comapay agents house</h5><h7>is a long established fact that eader&nbsp; will be distracted by the readable content.</h7>
+                          </br>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img alt="" class="img-fluid rounded-circle" src="https://ca.slack-edge.com/T03F8BUKY9W-U03KXSMMXEU-506af424c960-512">
+                            <h3 class="card-title py-2" style="font-size:20px;">Adrian Wood</h3>
+                            <br>
+                            <h5 class="profile" name="adrian" >Comapay agents house</h5><h7>is a long established fact that eader&nbsp; will be distracted by the readable content.</h7>
+                        </br>
+                        </div>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
           </div>
-  
-          <div class="col-md-2">
-            <br>
-            <br>
-            <button type="submit" class="btn btn-primary">Predict</button>
-          </div>
-  
-          <div class="col-md-6">
-            <br>
-            <br>
-            <H5>{{ prediction_text }}</H5>
-          </div>
+      </section><!-- team ends -->
   
         </div>
   
