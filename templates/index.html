@@ -29,18 +29,20 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="/templates/index.html" >Tweet Sentiment Predictor</a>
+          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="#" >Tweet Sentiment Predictor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="/templates/word_c.html">Word Collage</a>
+          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="word_c">Word Collage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="/templates/team.html">Team</a>
+          <a class="nav-link" style="color: #3ca5fb; font-size: 20px;" href="team.html">Team</a>
         </li>
 
       </ul>
     </div>
+
   </nav>
+  <div class="two-toned-header-color"></div>
 </header>
 <body>
 
@@ -107,7 +109,7 @@
         <div class="col-md-2">
           <br>
           <br>
-          <button type="submit" class="btn btn-primary" style="height:90px; width: 90px; font-size: 40px; margin-left: 100%; background-color: white; border: 3px solid black;border-radius: 15px; padding-bottom: 13px;"><img src="static/images/verification-mark.png" alt="" height="50px" width="50px"> </button>
+          <button type="submit" class="btn btn-primary" style="height:90px; width: 90px; font-size: 40px; background-color: white; border: 3px solid black;border-radius: 15px; padding-bottom: 13px; margin-left: -150px;"><img src="static/images/verification-mark.png" alt="" height="50px" width="50px"> </button>
           <div>
 
           </div>
@@ -117,8 +119,8 @@
           <br>
           <br>
 
-          <H5 style="font-size: 50px; margin-left: 50px;">{{ prediction_text }}</H5>
-          <H5>{{ features }}</H5>
+          <H5 style="margin-left:-32%;">{{ features }}</H5>
+          <H5 style="font-size: 50px; margin-left: -200px;">{{ prediction_text }}</H5>
 
         </div>
 
