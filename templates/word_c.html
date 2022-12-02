@@ -18,20 +18,20 @@
 </head>
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Navbar</a>
+    <!-- <a class="navbar-brand" href="index.html">Navbar</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" style="color: #3ca5fb;" href="/templates/index.html">Tweet Sentiment Predictor</a>
+          <a class="nav-link" style="color: #3ca5fb;" href={{ url_for("home") }}>Tweet Sentiment Predictor</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: #3ca5fb;" href="/templates/word_c.html">Word Collage</a>
+          <a class="nav-link" style="color: #3ca5fb;" href="#">Word Collage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: #3ca5fb;" href="/templates/team.html">Team</a>
+          <a class="nav-link" style="color: #3ca5fb;" href={{ url_for("team") }}>Team</a>
         </li>
 
       </ul>

@@ -78,6 +78,13 @@ def predict():
 
     return render_template('index.html', prediction_text=prediction_text, features=request.form.values())
 
+@app.route("/team")
+def team():
+    return render_template("team.html")
+
+@app.route("/word")
+def word():
+    return render_template("word_c.html")
 
 # Allow the Flask app to launch from the command line
 if __name__ == "__main__":
