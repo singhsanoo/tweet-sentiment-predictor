@@ -37,17 +37,18 @@
       </ul>
     </div>
   </nav>
+  <div class="two-toned-header-color"></div>
 </header>
 
 <body>
 
-    <style>
-      body {
-        background-image: url('/Resources/twitter_logos_top_r_corner.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      </style>
+  <style>
+    body {
+      background-image: url(static/images/twitter_logos_top_r_corner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
     <div class="container">
   
       <div class="row">
@@ -58,44 +59,7 @@
         </div>
       </div>
   
-      <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
-      <!-- Pass the form input to 'url_for'.  Make sure that the url_for argument matches the route method name  in app.py -->
-      <form action="{{url_for('predict')}}" method="post">
-  
-        <!-- Use a Jinja if-statement to fill the previous values from the Flask server if data has been entered -->
-        <div class="row">
-  
-          <div class="col-md-6">
-            <H5 class="text-end">Tweet Input</H5>
-            <br>
-          </div>      
-  
-          <div class="col-md-6">
-            <input type="text" name="tweet-input" id="tweet-input" placeholder="tweet-input" required="required" {% if features %} value="" {% endif %} />
-            <br>
-          </div>      
-  
-        </div>
-  
-        <div class="row">
-          <div class="col-md-4">          
-          </div>
-  
-          <div class="col-md-2">
-            <br>
-            <br>
-            <button type="submit" class="btn btn-primary">Predict</button>
-          </div>
-  
-          <div class="col-md-6">
-            <br>
-            <br>
-            <H5>{{ prediction_text }}</H5>
-          </div>
-  
-        </div>
-  
-      </form>
+      
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   
@@ -107,15 +71,15 @@
   <!-- Bootstrap CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   
-  <!-- Start footer -->
-  <footer class="footer navbar-fixed-bottom">
-    <div class="two-toned-footer-color"></div>
-        <p class="text-muted text-muted-footer text-center"> 
-             Machine Learning Tweet Sentiment Predictor
-        </p>
-  </footer>
+
   
   </body>
-  
+    <!-- Start footer -->
+<footer class="footer navbar-fixed-bottom">
+  <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center"> 
+          Machine Learning Tweet Sentiment Predictor
+      </p>
+</footer>
   
   </html>
