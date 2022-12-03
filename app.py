@@ -70,13 +70,35 @@ def predict():
     tweet = word_lemmatizer(tweet)
 
     # 3. Transform each input using the scaler function.
-    tweet_vectorized = vectorizer.transform(tweet)
+    try:
+        tweet_vectorized = vectorizer.transform(tweet)
+    except:
+        print('Unable to make prediction. Please input another tweet')
 
-    prediction_prob = np.round(model_lrc.predict_proba(tweet_vectorized)[0], 2) * 100
+    # Logistic Regression Prediction
+    prediction_prob_lrc = (model_lrc.predict_proba(tweet_vectorized)[0] * 100)
+    probability_lrc = []
 
-    prediction_text = f'Negative:  {prediction_prob[0]}% \n Positive:  {prediction_prob[1]}% '
+    for element in prediction_prob_lrc:
+        prob_0 = str(element)
+        prob_0 = prob_0[0:5]
+        probability_lrc.append(prob_0)
 
-    return render_template('index.html', prediction_text=prediction_text, features=request.form.values())
+    # SGD Prediction
+    prediction_prob_sgd = (model_sgd.predict_proba(tweet_vectorized)[0] *100)
+
+    probability_clf = []
+
+    for element in prediction_prob_sgd:
+        prob_0 = str(element)
+        prob_0 = prob_0[0:5]
+        probability_clf.append(prob_0)
+    
+
+    prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
+    prediction_text_sgd = f'SGD Model Prediction      : {probability_clf[0]}% negative / {probability_clf[1]}% positive'
+
+    return render_template('index.html', prediction_text_lrc=prediction_text_lrc, prediction_text_sgd=prediction_text_sgd, features=request.form.values())
 
 @app.route("/team")
 def team():
