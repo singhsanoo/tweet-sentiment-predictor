@@ -98,7 +98,7 @@ def predict():
     prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
     prediction_text_sgd = f'SGD Model Prediction      : {probability_clf[0]}% negative / {probability_clf[1]}% positive'
 
-    return render_template('index.html', prediction_text_lrc=prediction_text_lrc, prediction_text_sgd=prediction_text_sgd, features=request.form.values())
+    return render_template('index.html', prediction_text_lrc=prediction_text_lrc, prediction_text_sgd=prediction_text_sgd, features=request.form['tweet-input'])
 
 @app.route("/team")
 def team():
