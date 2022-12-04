@@ -27,10 +27,6 @@ a.navbar-brand {
     font-size: large;
 }
 
-
-/* --------------------------------------------- */
-/* --------------------------------------------- */
-
 #page-content {
     float: left;
     position: relative;
@@ -56,19 +52,6 @@ a.navbar-brand {
     /* Visual */
     background-color: #fff;
   }
-  
-#footer-team{
-    position: relative;
-    bottom: 0%;
-    background-color: #fff;
-
-    /* Box Model */
-    
-    width: 118%;
-    height: 60px;
-    margin-top: 30px;
-    left: -10%;
-}
 
 .text-muted-footer {
     /* Positioning */
@@ -86,6 +69,28 @@ a.navbar-brand {
     /* Visual */
     background-color: #3ca5fb;
   }
+
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+      margin: 0 0 100px;
+      /* bottom = footer height */
+      padding: 25px;
+  }
+  
+  footer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      overflow: hidden;
+  }
+
+
 
   /* --------------------------------------------- */
   /* --------------------------------------------- */
