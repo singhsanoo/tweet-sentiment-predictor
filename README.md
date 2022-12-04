@@ -28,7 +28,7 @@ pandas, numpy, NLTK, string, re, dump, RegexpTokenizer, stopwords, TfidfVectoriz
 # Instructions
 - Clone this repo to your computer
 - run app.py 
-- -make predictions
+- make predictions
 
 #Visuals
 
