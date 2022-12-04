@@ -10,7 +10,7 @@
 -Nhan Tran
 -Adrian Wood
 
-##Major Tasks:
+## Major Tasks:
 classifies  text (tweets) as positive or negitive 
 
 ## project overview  
