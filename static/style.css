@@ -72,38 +72,44 @@ text-align: center;
     background-color: #3ca5fb;
   }
 
-  html {
+html {
     position: relative;
     min-height: 100%;
   }
   
-  body {
+body {
       margin: 0 0 100px;
       /* bottom = footer height */
       padding: 25px;
-  }
+}
   
-  footer {
+footer {
       position: absolute;
       left: 0;
       bottom: 0;
       height: 100px;
       width: 100%;
       overflow: hidden;
-  }
+}
 
 
 
   /* --------------------------------------------- */
   /* --------------------------------------------- */
   /* Team */
+
+#scuff {
+  width: 75px;
+  height: 75px;
+}
+
+
+
 .name {
     color: blue;
 }
   
-.card-set{
-  max-height: 50%;
-}
+
 
 .name-set{
   font-weight: bold;
@@ -114,18 +120,14 @@ text-align: center;
   color: red;
 }
 
-  .work {
-    font-weight: bold;
-    font-size: 15px;
-  }
+.work {
+  font-weight: bold;
+  font-size: 15px;
+}
   
-  .about span {
-    font-size: 13px;
-  }
-
-  .img-fluid{
-    max-width: 50%;
-  }
+.about span {
+  font-size: 13px;
+}
 
 
   /* --------------------------------------------- */
