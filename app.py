@@ -18,6 +18,10 @@ model_sgd = load(open('clf.pkl', 'rb'))
 
 model_lrc = load(open('lrc.pkl', 'rb'))
 
+model_mnb = load(open('nbc.pkl', 'rb'))
+
+model_lgb = load(open('lgb.pkl', 'rb'))
+
 # Load the scaler from its pickle file.
 vectorizer = load(open('TfidV.pkl','rb'))
 
@@ -91,6 +95,26 @@ def predict():
             prob_0 = str(element)
             prob_0 = prob_0[0:5]
             probability_clf.append(prob_0)
+
+        # MultinomialNB Prediction
+        prediction_prob_mnb = (model_mnb.predict_proba(tweet_vectorized)[0] *100)
+
+        probability_mnb = []
+
+        for element in prediction_prob_mnb:
+            prob_0 = str(element)
+            prob_0 = prob_0[0:5]
+            probability_mnb.append(prob_0)
+
+        # LGB Prediction
+        prediction_prob_lgb = (model_lgb.predict_proba(tweet_vectorized)[0] *100)
+
+        probability_lgb = []
+
+        for element in prediction_prob_lgb:
+            prob_0 = str(element)
+            prob_0 = prob_0[0:5]
+            probability_lgb.append(prob_0)
         
 
         # prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
@@ -100,6 +124,10 @@ def predict():
                                 pred_txt_lrc_n=probability_lrc[0], \
                                 pred_txt_clf_p=probability_clf[1], \
                                 pred_txt_clf_n=probability_clf[0], \
+                                pred_txt_mnb_p=probability_mnb[1], \
+                                pred_txt_mnb_n=probability_mnb[0], \
+                                pred_txt_lgb_p=probability_lgb[1], \
+                                pred_txt_lgb_n=probability_lgb[0], \
                                 features=request.form['tweet-input'])
     
     except:
