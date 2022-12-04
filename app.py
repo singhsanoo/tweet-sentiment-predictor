@@ -93,13 +93,20 @@ def predict():
             probability_clf.append(prob_0)
         
 
-        prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
-        prediction_text_sgd = f'SGD Model Prediction      : {probability_clf[0]}% negative / {probability_clf[1]}% positive'
+        # prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
+        # prediction_text_sgd = f'SGD Model Prediction      : {probability_clf[0]}% negative / {probability_clf[1]}% positive'
 
-        return render_template('index.html', prediction_text_lrc=prediction_text_lrc, prediction_text_sgd=prediction_text_sgd, features=request.form['tweet-input'])
+        return render_template('index.html', pred_txt_lrc_p=probability_lrc[1], \
+                                pred_txt_lrc_n=probability_lrc[0], \
+                                pred_txt_clf_p=probability_clf[1], \
+                                pred_txt_clf_n=probability_clf[0], \
+                                features=request.form['tweet-input'])
     
     except:
-        return render_template('index.html', prediction_text_lrc='Cannot make prediction. Please enter another tweet', prediction_text_sgd='', features=request.form['tweet-input'])
+        # return render_template('index.html', prediction_text_lrc='Cannot make prediction. Please enter another tweet', prediction_text_sgd='', features=request.form['tweet-input'])
+        return render_template('index.html', \
+                                cannot_predict='Cannot make prediction. Please enter another tweet', \
+                                features=request.form['tweet-input'])
 
 @app.route("/team")
 def team():
