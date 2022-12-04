@@ -27,8 +27,8 @@ pandas, numpy, NLTK, string, re, dump, RegexpTokenizer, stopwords, TfidfVectoriz
 
 # Instructions
 - Clone this repo to your computer
-- To access the jupyter notebooks activate your Python Enviroment and then type "jupyter notebook" in your terminal
-
+- run app.py 
+- -make predictions
 
 #Visuals
 
