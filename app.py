@@ -72,33 +72,34 @@ def predict():
     # 3. Transform each input using the scaler function.
     try:
         tweet_vectorized = vectorizer.transform(tweet)
-    except:
-        print('Unable to make prediction. Please input another tweet')
 
-    # Logistic Regression Prediction
-    prediction_prob_lrc = (model_lrc.predict_proba(tweet_vectorized)[0] * 100)
-    probability_lrc = []
+        # Logistic Regression Prediction
+        prediction_prob_lrc = (model_lrc.predict_proba(tweet_vectorized)[0] * 100)
+        probability_lrc = []
 
-    for element in prediction_prob_lrc:
-        prob_0 = str(element)
-        prob_0 = prob_0[0:5]
-        probability_lrc.append(prob_0)
+        for element in prediction_prob_lrc:
+            prob_0 = str(element)
+            prob_0 = prob_0[0:5]
+            probability_lrc.append(prob_0)
 
-    # SGD Prediction
-    prediction_prob_sgd = (model_sgd.predict_proba(tweet_vectorized)[0] *100)
+        # SGD Prediction
+        prediction_prob_sgd = (model_sgd.predict_proba(tweet_vectorized)[0] *100)
 
-    probability_clf = []
+        probability_clf = []
 
-    for element in prediction_prob_sgd:
-        prob_0 = str(element)
-        prob_0 = prob_0[0:5]
-        probability_clf.append(prob_0)
+        for element in prediction_prob_sgd:
+            prob_0 = str(element)
+            prob_0 = prob_0[0:5]
+            probability_clf.append(prob_0)
+        
+
+        prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
+        prediction_text_sgd = f'SGD Model Prediction      : {probability_clf[0]}% negative / {probability_clf[1]}% positive'
+
+        return render_template('index.html', prediction_text_lrc=prediction_text_lrc, prediction_text_sgd=prediction_text_sgd, features=request.form['tweet-input'])
     
-
-    prediction_text_lrc = f'Logistic Model Prediction : {probability_lrc[0]}% negative / {probability_lrc[1]}% positive'
-    prediction_text_sgd = f'SGD Model Prediction      : {probability_clf[0]}% negative / {probability_clf[1]}% positive'
-
-    return render_template('index.html', prediction_text_lrc=prediction_text_lrc, prediction_text_sgd=prediction_text_sgd, features=request.form['tweet-input'])
+    except:
+        return render_template('index.html', prediction_text_lrc='Cannot make prediction. Please enter another tweet', prediction_text_sgd='', features=request.form['tweet-input'])
 
 @app.route("/team")
 def team():
