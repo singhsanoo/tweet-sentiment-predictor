@@ -96,7 +96,7 @@
         </div>      
 
         <div class="mx-3">
-          <input type="text" name="tweet-input" id="tweet-input" style="height:90px; width: 400px; font-size: 25px; border-radius: 15px;" placeholder="tweet-input" required="required" {% if features %} value="" {% endif %} />
+          <input type="text" name="tweet-input" id="tweet-input" style="height:90px; width: 400px; font-size: 25px; border-radius: 15px;" placeholder="tweet-input"  required="required" {% if features %} value="" {% endif %} />
         </div>
         <div>
           <button type="submit" class="btn btn-primary" style="height:90px; width: 90px; font-size: 40px; background-color: white; border: 3px solid black;border-radius: 15px; padding-bottom: 13px; margin-left: 0px;"><img src="static/images/verification-mark.png" alt="" height="50px" width="50px"> </button>
@@ -115,13 +115,33 @@
               <div>
                 <h3> Logistic Regression Classifier </h3>
                 <h4>Positive : {{ pred_txt_lrc_p }}%</h4>
+                <progress value="{{ pred_txt_lrc_p }}" max="100"></progress>
                 <h4>Negative : {{ pred_txt_lrc_n }}%</h4>
+                <progress value="{{ pred_txt_lrc_n }}" max="100"></progress>
               </div>
 
               <div>
                 <h3> Stochastic Gradient Descent </h3>
                 <h4>Positive : {{ pred_txt_clf_p }}%</h4>
+                <progress value="{{ pred_txt_clf_p }}" max="100"></progress>
                 <h4>Negative : {{ pred_txt_clf_n }}%</h4>
+                <progress value="{{ pred_txt_clf_n }}" max="100"></progress>
+              </div>
+
+              <div>
+                <h3> Multinomial Naive Bayes </h3>
+                <h4>Positive : {{ pred_txt_mnb_p }}%</h4>
+                <progress value="{{ pred_txt_clf_p }}" max="100"></progress>
+                <h4>Negative : {{ pred_txt_mnb_n }}%</h4>
+                <progress value="{{ pred_txt_clf_n }}" max="100"></progress>
+              </div>
+
+              <div>
+                <h3> Light Gradient-Boosting </h3>
+                <h4>Positive : {{ pred_txt_lgb_p }}%</h4>
+                <progress value="{{ pred_txt_lgb_p }}" max="100"></progress>
+                <h4>Negative : {{ pred_txt_lgb_n }}%</h4>
+                <progress value="{{ pred_txt_lgb_n }}" max="100"></progress>
               </div>
 
             </div>
