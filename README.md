@@ -29,8 +29,8 @@ After training and testing is concluded, there should be two Models that can for
 pandas, numpy, NLTK, string, re, dump, RegexpTokenizer, stopwords, TfidfVectorizer, train_test_split, MultinomialNB, confusion_matrix, f1_score, GridSearchCV, SGDClassifier, LogisticRegression, LGBMClassifier. 
 
 # Instructions
-Clone this repo to your computer
-To access the jupyter notebooks activate your Python Enviroment and then type "jupyter notebook" in your terminal
+- Clone this repo to your computer
+- To access the jupyter notebooks activate your Python Enviroment and then type "jupyter notebook" in your terminal
 
 # project overview  
 
