@@ -1,5 +1,7 @@
 # tweet-sentiment-predictor
 
+![1,2,3](https://user-images.githubusercontent.com/93777016/205468893-845257df-4e81-41d3-94b1-d32e9e215afb.png)
+
 # Contributers (Group 5)
 
 -Brandon Groenewold
@@ -30,17 +32,11 @@ pandas, numpy, NLTK, string, re, dump, RegexpTokenizer, stopwords, TfidfVectoriz
 - run app.py 
 - make predictions
 
-#Visuals
-
-![1,2,3](https://user-images.githubusercontent.com/93777016/205468893-845257df-4e81-41d3-94b1-d32e9e215afb.png)
-
-
-
-# word cloud for positive tweets
+## word cloud for positive tweets
 ![Screenshot 2022-12-03 220951](https://user-images.githubusercontent.com/93777016/205473855-ca189b2c-91d7-4028-bc5c-527cc392a6c6.png)
 
 
-# word cloud for negitive tweets
+## word cloud for negitive tweets
 
 
 ![Screenshot 2022-12-03 220920](https://user-images.githubusercontent.com/93777016/205473869-1ee87d33-ec99-499b-a704-ad0e62bdf200.png)
