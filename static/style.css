@@ -33,7 +33,9 @@ a.navbar-brand {
     margin-left: -5%;
 }
 
-
+.predict-results-box {
+text-align: center;
+}
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
@@ -95,10 +97,23 @@ a.navbar-brand {
   /* --------------------------------------------- */
   /* --------------------------------------------- */
   /* Team */
-  .name {
+.name {
     color: blue;
-  }
+}
   
+.card-set{
+  max-height: 50%;
+}
+
+.name-set{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.desc{
+  color: red;
+}
+
   .work {
     font-weight: bold;
     font-size: 15px;
@@ -107,6 +122,12 @@ a.navbar-brand {
   .about span {
     font-size: 13px;
   }
+
+  .img-fluid{
+    max-width: 50%;
+  }
+
+
   /* --------------------------------------------- */
 
 
