@@ -86,38 +86,59 @@
     <form action="{{url_for('predict')}}" method="post">
 
       <!-- Use a Jinja if-statement to fill the previous values from the Flask server if data has been entered -->
-      <div class="row">
-        <div class="spacer-2" style="padding-block:25px;">
+      <div class="my-4" style="display:flex; justify-content: center;">
+        <!-- <div class="spacer-2" style="padding-block:25px;">
 
-        </div>
-        <div class="col-md-4">
+        </div> -->
+        <div>
           <H5 class="text-end" style="font-size: 56px">Tweet Input</H5>
           <br>
         </div>      
 
-        <div class="col-md-4">
-
+        <div class="mx-3">
           <input type="text" name="tweet-input" id="tweet-input" style="height:90px; width: 400px; font-size: 25px; border-radius: 15px;" placeholder="tweet-input" required="required" {% if features %} value="" {% endif %} />
         </div>
-        <div class="col-md-4">
+        <div>
           <button type="submit" class="btn btn-primary" style="height:90px; width: 90px; font-size: 40px; background-color: white; border: 3px solid black;border-radius: 15px; padding-bottom: 13px; margin-left: 0px;"><img src="static/images/verification-mark.png" alt="" height="50px" width="50px"> </button>
         </div>      
       </div>
 
-      <!-- <div class="row">
-        <div class="col-md-4">          
-        </div> -->
+        {% if pred_txt_lrc_p %}
 
+        <div class="col-md-12 predict-results-box d-flex justify-content-center">
 
+          <div class="bg-light p-5" style="width:fit-content; border-radius: 8px;">
+            <h3>Tweet Input </h3>
+            <h5 style="font-style:italic;">{{ features }}</h5>
+            <hr>
+            <div class="d-flex justify-content-center gap-5">
+              <div>
+                <h3> Logistic Regression Classifier </h3>
+                <h4>Positive : {{ pred_txt_lrc_p }}%</h4>
+                <h4>Negative : {{ pred_txt_lrc_n }}%</h4>
+              </div>
 
-        <div class="col-md-12 predict-results-box" style="text-align:center;">
-        <br>
+              <div>
+                <h3> Stochastic Gradient Descent </h3>
+                <h4>Positive : {{ pred_txt_clf_p }}%</h4>
+                <h4>Negative : {{ pred_txt_clf_n }}%</h4>
+              </div>
 
-          <H5 style="font-size: 25px;">{{ features }}</H5>
-          <H5 style="font-size: 25px; margin-left: 0px;">{{ prediction_text_lrc }}</H5>
-          <H5 style="font-size: 25px; margin-left: 0px;">{{ prediction_text_sgd }}</H5>
-
+            </div>
+          </div>
         </div>
+
+        {% elif cannot_predict %}
+        <div class="col-md-12 predict-results-box d-flex justify-content-center">
+          <div class="bg-light p-5" style="width:fit-content; border-radius: 8px;">
+            <h3>Tweet Input </h3>
+            <h5 style="font-style:italic;">{{ features }}</h5>
+            <hr>
+            <h4>{{ cannot_predict }}</h4>
+          </div>
+        </div>
+
+        {% endif %}
 
       </div>
 
