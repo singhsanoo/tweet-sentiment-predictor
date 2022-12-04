@@ -33,3 +33,7 @@ pandas, numpy, NLTK, string, re, dump, RegexpTokenizer, stopwords, TfidfVectoriz
 #Visuals
 
 ![1,2,3](https://user-images.githubusercontent.com/93777016/205468893-845257df-4e81-41d3-94b1-d32e9e215afb.png)
+
+![thumbs_up](https://user-images.githubusercontent.com/93777016/205473671-e8de30db-33fa-4b9d-9076-016e066c40ae.png)
+
+![thumbs_down](https://user-images.githubusercontent.com/93777016/205473665-6b53b81d-a9a5-48d2-be85-caa4cf8e549e.png)
