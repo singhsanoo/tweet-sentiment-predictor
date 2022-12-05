@@ -1,122 +1,144 @@
-
 /* --------------------------------------------- */
 /* Navbar */
 a.navbar-brand {
-    color: aqua;
+  color: aqua;
+}
+
+nav {
+  z-index: 1000 !important;
+}
+
+.nav-link.active {
+  color: #03447a !important;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: #3ca5fb !important;
+  font-size: 20px;
 }
 
 /* ---------------------------------------------
 /* Header */
-.two-toned-header-color {
-    /* Box-model */
-    height: 6px;
-    padding-bottom: 3px;
-  
-    /* Visual */
-    background-color: #3ca5fb;
-  }
+header {
+  height: 60px;
+  z-index: 1000;
+}
 
+.two-toned-header-color {
+  /* Box-model */
+  height: 6px;
+  padding-bottom: 3px;
+
+  /* Visual */
+  background-color: #3ca5fb;
+}
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 /* Body */
-.top-space {
-    margin-bottom: 2%;
+.content-container {
+  height: calc(100vh - 60px - 60px - 10px);
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  width: 100vw;
+  /* z-index: 1; */
 }
-.title{
-    font-size: large;
+
+.top-space {
+  margin-bottom: 2%;
+}
+.title {
+  font-size: large;
 }
 
 #page-content {
-    float: left;
-    position: relative;
-    margin-left: -5%;
+  float: left;
+  position: relative;
 }
 
 .predict-results-box {
-text-align: center;
+  text-align: center;
+}
+
+.fs-3vh {
+  font-size: 2.8vh;
+}
+
+.fs-2vh {
+  font-size: 2.5vh;
 }
 
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* Footer */
 #footer-index {
-    /* Positioning */
-    position: absolute;
-    bottom: 0;
-  
-    /* Box-model */
-    width: 100%;
-    height: 60px;
-    margin-top: 30px;
-    left: 0%;
-  
-    /* Visual */
-    background-color: #fff;
-  }
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  left: 0%;
+
+  /* Visual */
+  background-color: #fff;
+}
 
 .text-muted-footer {
-    /* Positioning */
-    margin-top: 15px;
-  
-    /* Typography */
-    color: #fff;
-  }
-  
+  /* Positioning */
+  margin-top: 15px;
+
+  /* Typography */
+  color: #fff;
+}
+
 .two-toned-footer-color {
-    /* Box-model */
-    height: 6px;
-    padding-top: 3px;
-  
-    /* Visual */
-    background-color: #3ca5fb;
-  }
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+  /* Visual */
+  background-color: #3ca5fb;
+}
 
 html {
-    position: relative;
-    min-height: 100%;
-  }
-  
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-      margin: 0 0 100px;
-      /* bottom = footer height */
-      padding: 25px;
+  margin: 0 0 100px;
+  /* bottom = footer height */
+  padding: 25px;
 }
-  
+
 footer {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 100px;
-      width: 100%;
-      overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
-
-
-  /* --------------------------------------------- */
-  /* --------------------------------------------- */
-  /* Team */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* Team */
 
 #scuff {
   width: 75px;
   height: 75px;
 }
 
-
-
 .name {
-    color: blue;
+  color: blue;
 }
-  
 
-
-.name-set{
+.name-set {
   font-weight: bold;
   font-size: 30px;
 }
 
-.desc{
+.desc {
   color: red;
 }
 
@@ -124,12 +146,7 @@ footer {
   font-weight: bold;
   font-size: 15px;
 }
-  
+
 .about span {
   font-size: 13px;
 }
-
-
-  /* --------------------------------------------- */
-
-
