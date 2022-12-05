@@ -2,7 +2,7 @@
 
 ![1,2,3](https://user-images.githubusercontent.com/93777016/205468893-845257df-4e81-41d3-94b1-d32e9e215afb.png)
 
-# Contributers (Group 5)
+# Contributors (Group 5)
 
 -Brandon Groenewold
 -Sanoo Singh
@@ -11,11 +11,18 @@
 -Adrian Wood
 
 ## Major Tasks:
-classifies  text (tweets) as positive or negitive 
+- Apply ETL on the dataset
+- Preprocessing
+- Split Cleaned Data into Training Set and Testing Set
+- Train the Models
+- Saving the Vectorizer and Models
+- Make Predictions
+- Create Word Collage
+- Build the website using HTML/CSS
+- Build the flask server
+- Host the website on Heroku 
 
-## project overview  
-
-# Description
+# Project Objective
 
 We will use datasets to create a model with (various) features that will predict whether a tweet is positive or negative. Using Pandas, AWS, HTML/CSS/JS/Bootstrap, and NLTK they will be ranked and weighted to see which way they get classified.
 
@@ -29,14 +36,15 @@ pandas, numpy, NLTK, string, re, dump, RegexpTokenizer, stopwords, TfidfVectoriz
 
 # Instructions
 - Clone this repo to your computer
-- run app.py 
-- make predictions
+- Run app.py 
+- Type in your tweet into the Tweet Input box to see the prediction results
 
-## word cloud for positive tweets
+
+## Word Cloud for positive tweets
 ![Screenshot 2022-12-03 220951](https://user-images.githubusercontent.com/93777016/205473855-ca189b2c-91d7-4028-bc5c-527cc392a6c6.png)
 
 
-## word cloud for negitive tweets
+## Word Cloud for negitive tweets
 
 
 ![Screenshot 2022-12-03 220920](https://user-images.githubusercontent.com/93777016/205473869-1ee87d33-ec99-499b-a704-ad0e62bdf200.png)
