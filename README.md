@@ -10,11 +10,11 @@
 - Nhan Tran
 - Adrian Wood
 
-# original  dataset 
+## Dataset 
 
 https://www.kaggle.com/datasets/kazanova/sentiment140
 
-## original  dataset link download
+## dataset link download
 
 https://drive.google.com/file/d/1ML1sG56MqlVX6oiNM4WDtPC3AFOO06y0/view?usp=share_link
 
