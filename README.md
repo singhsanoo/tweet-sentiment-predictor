@@ -1,4 +1,4 @@
-# tweet-sentiment-predictor
+# Tweet-Sentiment-Predictor
 
 ![1,2,3](https://user-images.githubusercontent.com/93777016/205468893-845257df-4e81-41d3-94b1-d32e9e215afb.png)
 
@@ -70,7 +70,7 @@ After training and testing is concluded, there should be four Models (Logistic R
 - https://github.com/javedsha/text-classification
 - https://towardsdatascience.com/create-word-cloud-into-any-shape-you-want-using-python-d0b88834bc32
 
-# Instructions
+## Instructions
 - Clone this repo to your computer
 - Run app.py 
 - Type in your tweet into the Tweet Input box to see the prediction results
@@ -78,7 +78,7 @@ After training and testing is concluded, there should be four Models (Logistic R
 ## Landing Page
 ![Landing Page](https://user-images.githubusercontent.com/107283582/205543265-4e1cb5ab-699f-49eb-b481-c6d28b81639f.png)
 
-# Word Cloud Description
+## Word Cloud Description
 
 A word cloud is a Visualization of a text meant to help understand information at a glance. It is a word image where each word's size is proportional to its importance, the more often it's mentioned within a given text words appear larger.
 
