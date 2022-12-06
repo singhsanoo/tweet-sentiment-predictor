@@ -10,13 +10,15 @@
 - Nhan Tran
 - Adrian Wood
 
-## [Kaggle](https://www.kaggle.com/datasets/kazanova/sentiment140) 
+# Datasets
 
-## [Original](https://drive.google.com/file/d/1ML1sG56MqlVX6oiNM4WDtPC3AFOO06y0/view?usp=share_link)
+- [Kaggle](https://www.kaggle.com/datasets/kazanova/sentiment140) 
 
-## [Cleaned](https://drive.google.com/file/d/1RgRj4J9FJZ0YYN36nSx-umP9eZNPff94/view?usp=share_link)  
+- [Original](https://drive.google.com/file/d/1ML1sG56MqlVX6oiNM4WDtPC3AFOO06y0/view?usp=share_link)
 
-## [Lemmatize](https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv) 
+- [Cleaned](https://drive.google.com/file/d/1RgRj4J9FJZ0YYN36nSx-umP9eZNPff94/view?usp=share_link)  
+
+- [Lemmatize](https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv) 
 
 ## Major Tasks:
 - Apply ETL on the dataset
