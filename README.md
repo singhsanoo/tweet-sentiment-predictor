@@ -20,6 +20,42 @@
 
 - [Lemmatize](https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv) 
 
+
+
+# Imports
+
+- pandas
+- numpy
+- NLTK
+- string
+- re
+- dump
+- RegexpTokenizer
+- stopwords
+- TfidfVectorizer
+- train_test_split
+- MultinomialNB
+- confusion_matrix
+- f1_score
+- GridSearchCV
+- SGDClassifier
+- LogisticRegression
+- LGBMClassifier
+
+# Resources 
+- https://medium.com/mlearning-ai/how-to-deploy-an-nlp-machine-learning-model-with-flask-on-web-788c2825b792
+- https://github.com/conda-forge/lightgbm-feedstock
+- https://github.com/javedsha/text-classification
+- https://towardsdatascience.com/create-word-cloud-into-any-shape-you-want-using-python-d0b88834bc32
+
+# Instructions
+- Clone this repo to your computer
+- Run app.py 
+- Type in your tweet into the Tweet Input box to see the prediction results
+
+# Landing Page
+![Landing Page](https://user-images.githubusercontent.com/107283582/205543265-4e1cb5ab-699f-49eb-b481-c6d28b81639f.png)
+
 # Major Tasks
 - Apply ETL on the dataset
 - Preprocessing
@@ -64,40 +100,6 @@ When we input a tweet that was completely removed in the preprocessing pipeline,
 # Results:
 
 After training and testing is concluded, there should be four Models (Logistic Regression Classifier, Stochastic Gradient Descent, Multinomial Naive Bayes, Light Gradient-Boosting) that can formulate Predictions. These are able to identify positive and negative tweets from a dataset. These models can be used with new information and can make a  determination on new entered  tweets and decide if the tweet is positive or negative with increasing levels of accuracy. The models can now be used with any new tweets collected  in the future for farther development.
-
-# Imports
-
-- pandas
-- numpy
-- NLTK
-- string
-- re
-- dump
-- RegexpTokenizer
-- stopwords
-- TfidfVectorizer
-- train_test_split
-- MultinomialNB
-- confusion_matrix
-- f1_score
-- GridSearchCV
-- SGDClassifier
-- LogisticRegression
-- LGBMClassifier
-
-# Resources 
-- https://medium.com/mlearning-ai/how-to-deploy-an-nlp-machine-learning-model-with-flask-on-web-788c2825b792
-- https://github.com/conda-forge/lightgbm-feedstock
-- https://github.com/javedsha/text-classification
-- https://towardsdatascience.com/create-word-cloud-into-any-shape-you-want-using-python-d0b88834bc32
-
-# Instructions
-- Clone this repo to your computer
-- Run app.py 
-- Type in your tweet into the Tweet Input box to see the prediction results
-
-# Landing Page
-![Landing Page](https://user-images.githubusercontent.com/107283582/205543265-4e1cb5ab-699f-49eb-b481-c6d28b81639f.png)
 
 # Trained Models
 
