@@ -20,7 +20,7 @@
 
 - [Lemmatize](https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv) 
 
-# Major Tasks:
+# Major Tasks
 - Apply ETL on the dataset
 - Preprocessing
 - Split Cleaned Data into Training Set and Testing Set
