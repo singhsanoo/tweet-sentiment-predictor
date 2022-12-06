@@ -14,15 +14,15 @@
 
 https://www.kaggle.com/datasets/kazanova/sentiment140
 
-- # original  dataset link download
+## original  dataset link download
 
 https://drive.google.com/file/d/1ML1sG56MqlVX6oiNM4WDtPC3AFOO06y0/view?usp=share_link
 
-# cleaned dataset download
+## cleaned dataset download
 
 https://drive.google.com/file/d/1RgRj4J9FJZ0YYN36nSx-umP9eZNPff94/view?usp=share_link
 
-# Lemmatize dataset download
+## Lemmatize dataset download
 
 https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv
 
@@ -46,7 +46,7 @@ We will use datasets to create a model with (various) features that will predict
 
 After training and testing is concluded, there should be four Models (Logistic Regression Classifier, Stochastic Gradient Descent, Multinomial Naive Bayes, Light Gradient-Boosting) that can formulate Predictions. These are able to identify positive and negative tweets from a dataset. These models can be used with new information and can make a  determination on new entered  tweets and decide if the tweet is positive or negative with increasing levels of accuracy. The models can now be used with any new tweets collected  in the future for farther development.
 
-# Imports
+## Imports
 
 - pandas
 - numpy
@@ -66,7 +66,7 @@ After training and testing is concluded, there should be four Models (Logistic R
 - LogisticRegression
 - LGBMClassifier
 
-# Resources 
+## Resources 
 - https://medium.com/mlearning-ai/how-to-deploy-an-nlp-machine-learning-model-with-flask-on-web-788c2825b792
 - https://github.com/conda-forge/lightgbm-feedstock
 - https://github.com/javedsha/text-classification
