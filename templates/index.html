@@ -95,7 +95,7 @@
         <div class="intro-slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="intro-section section overlay" data-bg-img="static/img/hero-slider/twitter-background.jpg">
+                    <div class="intro-section section overlay" data-bg-img="static/img/twitter-background.jpg">
 
                         <div class="container">
                             <div class="row row-cols-lg-1 row-cols-1">
@@ -172,7 +172,7 @@
                font-size: 4vh;
                border-radius: 15px;
              "
-             placeholder="tweet-input"
+             placeholder="Enter your tweet here"
              required="required"
              {%
              if
@@ -200,7 +200,7 @@
              "
            >
              <img
-               src="static/images/verification-mark.png"
+               src="static/img/verification-mark.png"
                alt=""
                height="80%"
                width="90%"
@@ -217,8 +217,8 @@
            class="bg-light p-5"
            style="width: fit-content; border-radius: 8px"
          >
-           <h3 class="fs-3vh">Tweet Input</h3>
-           <h5 style="font-style: italic">{{ features }}</h5>
+           <h2 class="fs-3vh" style="color:MediumTurquoise" id = "displaytweet">Tweet Input</h3>
+           <h5 style="font-style: italic" id = "displaytweet">{{ features }}</h5>
            <hr />
            <div class="d-flex justify-content-center gap-5">
              <div>
@@ -275,6 +275,7 @@
      </form>
 
    </div>
+  </main>
    <!-- ========================================================================= -->
 
     <!--== Start Footer Area Wrapper ==-->

@@ -36,6 +36,11 @@
   Typography CSS
 -----------------------------------------------------------------------
 */
+#displaytweet{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #parentDiv{
   text-align: center;
   }
@@ -45,6 +50,10 @@
   width:755px;
   text-align: left;
   }
+
+#collagePictures{
+  padding-top: 10px;
+}
 body {
   color: #666666;
   font-size: 0.875rem;
