@@ -36,6 +36,15 @@
   Typography CSS
 -----------------------------------------------------------------------
 */
+#parentDiv{
+  text-align: center;
+  }
+  
+#mainHeader{
+  margin:0 auto;
+  width:755px;
+  text-align: left;
+  }
 body {
   color: #666666;
   font-size: 0.875rem;
