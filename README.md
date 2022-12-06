@@ -120,7 +120,7 @@ After training and testing is concluded, there should be four Models (Logistic R
 
 A word cloud is a Visualization of a text meant to help understand information at a glance. It is a word image where each word's size is proportional to its importance, the more often it's mentioned within a given text words appear larger.
 
-Being able to see the tweet information was helpful during the training and testing of the models. After looking at the word clouds you could see there are some words that are used in both positive and negative tweets such as "I'm". This could be caused by people use it in both instances such as "I'm happy" and "I'm sad".
+Being able to see the tweet information was helpful during the training and testing of the models. After looking at the word clouds you could see there are some words that are used in both positive and negative tweets such as "I'm". This could be caused by people using it in both instances such as "I'm happy" and "I'm sad".
 
 
 # Word Cloud for positive tweets
