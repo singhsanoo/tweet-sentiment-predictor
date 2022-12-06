@@ -101,7 +101,7 @@ When we input a tweet that was completely removed in the preprocessing pipeline,
 After training and testing is concluded, there should be four Models (Logistic Regression Classifier, Stochastic Gradient Descent, Multinomial Naive Bayes, Light Gradient-Boosting) that can formulate Predictions. These are able to identify positive and negative tweets from a dataset. These models can be used with new information and can make a  determination on new entered  tweets and decide if the tweet is positive or negative with increasing levels of accuracy. The models can now be used with any new tweets collected  in the future for farther development.
 
 # Landing Page
-![Landing Page](static/img/landing_page.png)
+![Landing Page](static/img/photos/landing_page.png)
 
 # Trained Models
 
