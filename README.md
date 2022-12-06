@@ -53,8 +53,6 @@
 - Run app.py 
 - Type in your tweet into the Tweet Input box to see the prediction results
 
-# Landing Page
-![Landing Page](https://user-images.githubusercontent.com/107283582/205543265-4e1cb5ab-699f-49eb-b481-c6d28b81639f.png)
 
 # Major Tasks
 - Apply ETL on the dataset
@@ -76,7 +74,7 @@ We will use datasets to create a model with (various) features that will predict
 
 The goal of this project was to see if it was possible to train a machine learning model to recognize the sentiment of a tweet. We began by discussing possible limitations. In the end, we wanted to host this model on Heroku. Since Heroku only supports scikit-learn models, we were unable to use PySpark or Tensorflow. However, we found that NLTK offers the same functionality and would work with Heroku. NLTK is a platform for building Python programs to work with human language data. It contains a suite of text processing libraries for classification, tokenization, lemmatization, etc.
 
-# We built a processing pipeline with the following steps:
+### We built a processing pipeline with the following steps:
 
 - Removing Punctuation - Since we were dealing with tweets, there were a host of punctuation marks we chose to eliminate. In today’s language, emoticons such as ‘:D’ could actually yield some sort of sentiment. However, as there were many other unnecessary punctuation marks, we chose to eliminate all of them.
 Tokenizing - This key step in the pipeline separates words so that each can be analyzed individually, usually by whitespace but in certain situations, a contraction such as I’m needs to be separated into the two words I am.
@@ -85,15 +83,15 @@ Removing Stop Words - Stop words are common words that hold no sentiment and are
 - Lemmatization - This step identifies when two words have the same root and maps them to one word. For example: ‘code,’ ‘coding,’ ‘codes,’ and ‘coded’ will all get mapped to ‘code.’
 Vectorization - This final step maps each word to a numerical value.
 
-The preprocessing took quite a bit of time. In total, it took almost three hours to run our data through steps 1-4 of the pipeline. To avoid doing these steps again, we saved the preprocessed data so that we could easily call it later. Then began training our models. At this step, we vectorized the data, which maps each word to a numerical value, and split the data into a training set and a testing set.
+- The preprocessing took quite a bit of time. In total, it took almost three hours to run our data through steps 1-4 of the pipeline. To avoid doing these steps again, we saved the preprocessed data so that we could easily call it later. Then began training our models. At this step, we vectorized the data, which maps each word to a numerical value, and split the data into a training set and a testing set.
 
-We chose four different types of models. However, they all had a few things in common that made them ideal choices for our project. They all did well with text classification in general and they were all very fast. Since our dataset consisted of 1.6 million tweets, speed was important. The first model we chose was the Multinomial Naive Bayes Classifier (NBC). Initially, we obtained a score of about 76.5% on the test set. Then, we chose the Stochastic Gradient Descent (SGD) model which scored about 76%. Next, we chose the Logistic Regression Classifier (LRC) which scored about 78.3%. Finally, we tried the Light Gradient Boosting (LGB) model and obtained a score of about 66%. After performing a grid search on each model,  we were able to increase the testing score of the SGD model to about 78.4% by adjusting the alpha parameter. This gave it a slight edge over the LRC model, currently our best performer. We were unable to increase the scores for any of the other models.
+- We chose four different types of models. However, they all had a few things in common that made them ideal choices for our project. They all did well with text classification in general and they were all very fast. Since our dataset consisted of 1.6 million tweets, speed was important. The first model we chose was the Multinomial Naive Bayes Classifier (NBC). Initially, we obtained a score of about 76.5% on the test set. Then, we chose the Stochastic Gradient Descent (SGD) model which scored about 76%. Next, we chose the Logistic Regression Classifier (LRC) which scored about 78.3%. Finally, we tried the Light Gradient Boosting (LGB) model and obtained a score of about 66%. After performing a grid search on each model,  we were able to increase the testing score of the SGD model to about 78.4% by adjusting the alpha parameter. This gave it a slight edge over the LRC model, currently our best performer. We were unable to increase the scores for any of the other models.
 
-Next we saved our vectorizer and each model so that they could be deployed to Heroku. We began with our two best-performing models (SGD and LRC) keeping in mind the size restrictions that Heroku imposes. The fact that these models performed best makes sense. Even considering our huge dataset, the zero-frequency problem is still an issue with the NBC model and the excess noise is still an issue for the LGB model. However, after finding out that the models were rather small and we had plenty of space to work with, we decided to include them all.
+- Next we saved our vectorizer and each model so that they could be deployed to Heroku. We began with our two best-performing models (SGD and LRC) keeping in mind the size restrictions that Heroku imposes. The fact that these models performed best makes sense. Even considering our huge dataset, the zero-frequency problem is still an issue with the NBC model and the excess noise is still an issue for the LGB model. However, after finding out that the models were rather small and we had plenty of space to work with, we decided to include them all.
 
-Finally, we started making some predictions. We ran into three problems:
+- Finally, we started making some predictions. We ran into three problems:
 
-The probabilities wouldn’t display for the SGD model. We found that the ‘predict_proba’ attribute couldn’t be used when we used ‘hinge’ for the ‘loss’ parameter. Although this was determined by our grid search to be the best parameter, we actually didn’t lose any accuracy by changing it to ‘log.’ This cleared up that error.
+- The probabilities wouldn’t display for the SGD model. We found that the ‘predict_proba’ attribute couldn’t be used when we used ‘hinge’ for the ‘loss’ parameter. Although this was determined by our grid search to be the best parameter, we actually didn’t lose any accuracy by changing it to ‘log.’ This cleared up that error.
 For some reason, the displayed percentages wouldn’t round properly in certain fringe cases. We were unable to figure out why, but we were able to convert each value in the float to a string, then select the first five values. For example 29.45 would be the first five values for 29.45348576. This affects the rounding of the hundredths place in some cases but we could always include more decimal places if need be. The important part was getting the values to display in a consistent way.
 When we input a tweet that was completely removed in the preprocessing pipeline, it caused the prediction to fail. For example, since we removed all punctuation, a tweet such as ‘:D’ would be completely removed. Similarly, a list of only stop words such as ‘and or a’ would be completely removed. This meant that there was nothing left to vectorize which broke the prediction. To remedy this, we used Try/Except around the vectorizer which prompted the user to enter a new tweet if such a situation occurred.
 
@@ -101,6 +99,9 @@ When we input a tweet that was completely removed in the preprocessing pipeline,
 # Results:
 
 After training and testing is concluded, there should be four Models (Logistic Regression Classifier, Stochastic Gradient Descent, Multinomial Naive Bayes, Light Gradient-Boosting) that can formulate Predictions. These are able to identify positive and negative tweets from a dataset. These models can be used with new information and can make a  determination on new entered  tweets and decide if the tweet is positive or negative with increasing levels of accuracy. The models can now be used with any new tweets collected  in the future for farther development.
+
+# Landing Page
+![Landing Page](https://user-images.githubusercontent.com/107283582/205543265-4e1cb5ab-699f-49eb-b481-c6d28b81639f.png)
 
 # Trained Models
 
@@ -123,7 +124,7 @@ Being able to see the tweet information was helpful during the training and test
 
 # Word Cloud for positive tweets
 
-appon looking at the word clouds with positive tweets, we found that some of the positive words were a little out of the ordinary like "kackered" and some random  numbers. Some of these might have been able to make it in the positive words based on the words around them or the whole feel of the tweet, Other then the words themself.
+Appon looking at the word clouds with positive tweets, we found that some of the positive words were a little out of the ordinary like "kackered" and some random  numbers. Some of these might have been able to make it in the positive words based on the words around them or the whole feel of the tweet, Other then the words themself.
 
 ![Screenshot 2022-12-03 220951](https://user-images.githubusercontent.com/93777016/205473855-ca189b2c-91d7-4028-bc5c-527cc392a6c6.png)
 
