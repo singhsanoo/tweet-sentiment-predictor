@@ -130,7 +130,7 @@ upon looking at the word clouds with positive tweets, we found that some of the 
 ![Screenshot 2022-12-03 220951](https://user-images.githubusercontent.com/93777016/205473855-ca189b2c-91d7-4028-bc5c-527cc392a6c6.png)
 
 
-# Word Clod for negative tweets
+# Word Cloud  for negative tweets
 
 Just like with the positive tweets some of the words the models considered negative were somewhat surprising such as "cool" or "hope". Words that normally have a positive sentiment. After discussing it with the group, we concluded that some of these words might have made it in the negative tweets because they could have been used to express expectations that might not have been met.
 
