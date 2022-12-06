@@ -54,9 +54,9 @@
         <div class="header-navigation-area d-none">
           <ul class="main-menu nav justify-content-center">
             <li><a href="#">Home</a></li>
-            <li><a href="{{ url_for('team') }}">About</a></li>
             <li><a href="{{ url_for('word') }}">Word Collage</a></li>
             <li><a href="{{ url_for('summary') }}"> Summary Page </a></li>
+            <li><a href="{{ url_for('team') }}">About</a></li>
           </ul>
         </div>
         <div class="header-action-area">
@@ -143,11 +143,11 @@
      id="page-content">
 
      <div class="text-center">
-       <h1 class="my-3" style="font-size: 10vh">Prediction</h1>
-       <h3 style="font-size: 4vh">
-         Enter your tweet into the box to see predicted Sentiment!
-       </h3>
-       <br />
+      <h1 class="my-3" style="font-size: 10vh">Prediction</h1>
+      <h3 style="font-size: 4vh">
+        Enter your tweet below to see predicted sentiment!
+      </h3>
+      <br />
      </div>
 
      <!-- Input section using a form and the Hypertext Transfer Protocol (HTTP) POST method -->
@@ -217,7 +217,7 @@
            class="bg-light p-5"
            style="width: fit-content; border-radius: 8px"
          >
-           <h2 class="fs-3vh" style="color:MediumTurquoise" id = "displaytweet">Tweet Input</h3>
+           <h2 class="fs-3vh" id = "displaytweet">Tweet Input</h3>
            <h5 style="font-style: italic" id = "displaytweet">{{ features }}</h5>
            <hr />
            <div class="d-flex justify-content-center gap-5">
@@ -316,9 +316,9 @@
           <div class="asside-navigation-area">
             <ul class="asside-menu nav" id="assideMenuNav">
               <li><a href="#">Home</a></li>
-              <li><a href="{{ url_for('team') }}">About</a></li>
               <li><a href="{{ url_for('word') }}">Word Collage</a></li>
               <li><a href="{{ url_for('summary') }}"> Summary Page </a></li>
+              <li><a href="{{ url_for('team') }}">About</a></li>
             </ul>
           </div>
           <!-- End Asside Menu Wrapper -->
