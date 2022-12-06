@@ -136,17 +136,17 @@ def predict():
                                 cannot_predict='Cannot make prediction. Please enter another tweet', \
                                 features=request.form['tweet-input'])
 
-@app.route("/word")
+@app.route("/about")
+def team():
+    return render_template("about.html")
+
+@app.route("/word-collage")
 def word():
-    return render_template("word_c.html")
+    return render_template("word-collage.html")
 
 @app.route("/summary")
 def summary():
     return render_template("summary.html")
-
-@app.route("/team")
-def team():
-    return render_template("team.html")
 
 # Allow the Flask app to launch from the command line
 if __name__ == "__main__":

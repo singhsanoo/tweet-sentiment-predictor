@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alexis – Photography Responsive Bootstrap 5 Template</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="static/img/favicon.png" type="image/x-icon" />
+
+    <!--== Main Style CSS ==-->
+    <link href="static/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+</head>
+
+<body>
+<!--wrapper start-->
+<div class="wrapper about-page-wrapper">
+
+  <!--== Start Preloader Content ==-->
+  <div class="preloader-wrap">
+  	<div class="preloader">
+	    <span class="dot"></span>
+	    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+	    </div>
+  	</div>
+  </div>
+  <!--== End Preloader Content ==-->
+
+  <!--== Start Header Wrapper ==-->
+  <header class="header-area header-default sticky-header hb-border hb-border">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <!-- Hamburger Menu Start -->
+        <div class="col-auto">
+          <div class="header-navigation-area d-none">
+            <ul class="main-menu nav justify-content-center">
+              <li><a href="{{ url_for('home') }}">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="{{ url_for('word') }}">Word Collage</a></li>
+              <li><a href="{{ url_for('summary') }}"> Summary Page </a></li>
+            </ul>
+          </div>
+          <div class="header-action-area">
+            <button class="btn-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <span class="menu-text">Menu</span>
+          </div>
+        </div>
+        <!-- Hamburger Menu Start -->
+
+        <!-- Header Logo Start -->
+        <div class="col-auto" style="padding-right:140px">
+          <div class="header-logo-area">
+            <a href="{{ url_for('home') }}">
+              <img class="logo-main" src="static/img/group5.png" alt="Logo" />
+              <img class="logo-light" src="static/img/group5.png" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <!-- Header Logo End -->
+
+        <!-- Header Search Start -->
+        <div class="col-auto">
+        </div>
+        <!-- Header Search Start -->
+      </div>
+    </div>
+  </header>
+  <!--== End Header Wrapper ==-->
+
+  
+
+  <main class="main-content site-wrapper-reveal">
+    <!--== Start Page Title Area ==-->
+    <div class="page-title-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <div class="page-title-content content-style2 text-center">
+              <h4 class="page-title">About</h4>
+              <h2 class="title">We Are Group 5</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--== End Page Title Area ==-->
+
+    <!--== Start Team Area Wrapper ==-->
+    <div class="team-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h2 class="title">Meet Our Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!--== Start Single Member ==-->
+          <div class="col-sm-6 col-md-3" data-aos="fade-up">
+            <div class="team-member">
+              <div class="thumb">
+                <img src="static/img/team/sanoo.png" alt="Alexis-Team">
+              </div>
+              <div class="content">
+                <div class="member-info">
+                  <h3 class="name"><a href="#/">Sanoo Singh</a></h3>
+                  <span class="designation">CEO Founder</span>
+                </div>
+                <div class="member-icons">
+                  <a href="https://github.com/singhsanoo"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/sanoo-singh/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--== End Single Member ==-->
+
+          <!--== Start Single Member ==-->
+          <div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="thumb">
+                <img src="static/img/team/jon.png" alt="Alexis-Team">
+              </div>
+              <div class="content">
+                <div class="member-info">
+                  <h3 class="name"><a href="#/">Jon Kwiatkowski</a></h3>
+                  <span class="designation">CEO Founder</span>
+                </div>
+                <div class="member-icons">
+                  <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                  <a href="https://github.com/jonkwiatkowski"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/jonkwiatkowski/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--== End Single Member ==-->
+
+          <!--== Start Single Member ==-->
+          <div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="team-member">
+              <div class="thumb">
+                <img src="static/img/team/nhan.png" alt="Alexis-Team">
+              </div>
+              <div class="content">
+                <div class="member-info">
+                  <h3 class="name"><a href="#/">Nhan Tran</a></h3>
+                  <span class="designation">CEO Founder</span>
+                </div>
+                <div class="member-icons">
+                  <a href="https://github.com/NTTGermania"><i class="fa-brands fa-github"></i></a>
+                  <a href="#/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--== End Single Member ==-->
+
+          <!--== Start Single Member ==-->
+          <div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="team-member">
+              <div class="thumb">
+                <img src="static/img/team/brandon.png" alt="Alexis-Team">
+              </div>
+              <div class="content">
+                <div class="member-info">
+                  <h3 class="name"><a href="#/">Brandon Groenewold</a></h3>
+                  <span class="designation">CEO Founder</span>
+                </div>
+                <div class="member-icons">
+                  <a href="https://github.com/BrandonGroenewold"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/brandon-groenewold-356770174/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--== End Single Member ==-->
+
+          <!--== Start Single Member ==-->
+          <div class="col-sm-6 col-md-3" data-aos="fade-up">
+            <div class="team-member">
+              <div class="thumb">
+                <img src="static/img/team/adrian.png" alt="Alexis-Team">
+              </div>
+              <div class="content">
+                <div class="member-info">
+                  <h3 class="name"><a href="#/">Adrian Wood</a></h3>
+                  <span class="designation">CEO Founder</span>
+                </div>
+                <div class="member-icons">
+                  <a href="#/"><i class="social_twitter"></i></a>
+                  <a href="https://github.com/VitaminDsun"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/adrianjohnwood/"><i class="social_linkedin_square"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--== End Single Member ==-->
+
+          <!--== Start Become Member ==-->
+          <div class="col-sm-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="team-member become-member">
+              <div class="thumb">
+                <img src="static/img/team/01.jpg" alt="Alexis-Team">
+              </div>
+              <div class="content">
+                <div class="member-info">
+                  <h3 class="name"><a href="#/">Become a<br>member in <br>Group 5</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--== End Become Member ==-->
+
+        </div>
+      </div>
+    </div>
+    <!--== End Team Area Wrapper ==-->
+
+    <!--== Start Quote Area Wrapper ==-->
+    <div class="blockquote-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <blockquote class="blockquote-style">
+              <p>"Your website looks really great and I like the way you've incorporated the predictions from multiple models. Outstanding job so far!"</p>
+              <cite>
+                <span class="name">Dominic Labella</span>
+                <span class="job">Data Science Instructor and Quant Developer</span>
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--== End Quote Area Wrapper ==-->
+  </main>
+
+  <!--== Start Footer Area Wrapper ==-->
+  <footer class="footer-area reveal-footer border-top-style">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer-content">
+            <div class="widget-item text-center" style = "padding-left:720px;">
+              <div class="widget-copyright">
+                <p>© 2022 <span>Machine Learning Tweet Sentiment Predictor</span>. Made by <img src="static/img/group5.png" alt="Logo"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--== End Footer Area Wrapper ==-->
+  
+
+
+  <!--== Start Side Menu ==-->
+  <aside class="off-canvas-wrapper">
+    <div class="off-canvas-inner">
+      <div class="off-canvas-overlay"></div>
+      <!-- Start Off Canvas Content Wrapper -->
+      <div class="off-canvas-content">
+        <!-- Off Canvas Header -->
+        <div class="off-canvas-header">
+          <div class="close-action">
+            <button class="btn-close"><i class="icon_close"></i></button>
+          </div>
+        </div>
+
+        <div class="off-canvas-item">
+          <!-- Start Asside Menu Wrapper -->
+          <div class="asside-navigation-area">
+            <ul class="asside-menu nav" id="assideMenuNav">
+              <li><a href="{{ url_for('home') }}">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="{{ url_for('word') }}">Word Collage</a></li>
+              <li><a href="{{ url_for('summary') }}"> Summary Page </a></li>
+            </ul>
+          </div>
+          <!-- End Asside Menu Wrapper -->
+        </div>
+        <!-- Off Canvas Footer -->
+        <div class="off-canvas-footer"></div>
+      </div>
+      <!-- End Off Canvas Content Wrapper -->
+    </div>
+  </aside>
+  <!--== End Side Menu ==-->
+</div>
+
+<!--=======================Javascript============================-->
+
+<!--=== Modernizr Min Js ===-->
+<script src="static/js/modernizr.js"></script>
+<!--=== jQuery Min Js ===-->
+<script src="static/js/jquery-main.js"></script>
+<!--=== jQuery Migration Min Js ===-->
+<script src="static/js/jquery-migrate.js"></script>
+<!--=== Popper Min Js ===-->
+<script src="static/js/popper.min.js"></script>
+<!--=== Bootstrap Min Js ===-->
+<script src="static/js/bootstrap.min.js"></script>
+<!--=== jquery UI Min Js ===-->
+<script src="static/js/jquery-ui.min.js"></script>
+<!--=== Plugin Collection Js ===-->
+<script src="static/js/plugincollection.js"></script>
+
+<!--=== Custom Js ===-->
+<script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

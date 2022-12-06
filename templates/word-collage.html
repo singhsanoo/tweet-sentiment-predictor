@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alexis – Photography Responsive Bootstrap 5 Template</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="static/img/favicon.png" type="image/x-icon" />
+
+    <!--== Main Style CSS ==-->
+    <link href="static/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<!--wrapper start-->
+<div class="wrapper">
+
+  <!--== Start Preloader Content ==-->
+  <div class="preloader-wrap">
+  	<div class="preloader">
+	    <span class="dot"></span>
+	    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+	    </div>
+  	</div>
+  </div>
+  <!--== End Preloader Content ==-->
+
+  <!--== Start Header Wrapper ==-->
+  <header class="header-area header-default sticky-header hb-border">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between">
+        <!-- Hamburger Menu Start -->
+        <div class="col-auto">
+          <div class="header-navigation-area d-none">
+            <ul class="main-menu nav justify-content-center">
+              <li><a href="{{ url_for('home') }}">Home</a></li>
+              <li><a href="{{ url_for('team') }}">About</a></li>
+              <li><a href="#">Word Collage</a></li>
+              <li><a href="{{ url_for('summary') }}">Summary Page </a></li>
+            </ul>
+          </div>
+          <div class="header-action-area">
+            <button class="btn-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <span class="menu-text">Menu</span>
+          </div>
+        </div>
+        <!-- Hamburger Menu Start -->
+
+        <!-- Header Logo Start -->
+        <div class="col-auto" style="padding-right:140px">
+          <div class="header-logo-area">
+            <a href="{{ url_for('home') }}">
+              <img class="logo-main" src="static/img/group5.png" alt="Logo" />
+              <img class="logo-light" src="static/img/group5.png" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <!-- Header Logo End -->
+
+        <!-- Header Search Start -->
+        <div class="col-auto">
+        </div>
+        <!-- Header Search Start -->
+      </div>
+    </div>
+  </header>
+  <!--== End Header Wrapper ==-->
+
+
+  <main class="main-content site-wrapper-reveal">
+    <!-- ================================================================ -->
+
+    <div class="text-center content-container">
+      <h1 class="my-3">Positive Vs Negative</h1>
+      <h1>Word Collage</h1>
+
+      <div class="d-flex justify-content-center gap-5 my-3">
+        <div style="height: 60vh">
+          <img
+            src="static/img/collage/thumbs_up.png"
+            style="border-radius: 8px; height: 100%"
+          />
+        </div>
+        <div style="height: 60vh">
+          <img
+            src="static/img/collage/thumbs_down.png"
+            style="border-radius: 8px; height: 100%"
+          />
+        </div>
+      </div>
+    </div>  
+  </main>
+
+   <!--== Start Footer Area Wrapper ==-->
+   <footer class="footer-area reveal-footer border-top-style">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer-content">
+            <div class="widget-item text-center" style = "padding-left:720px;">
+              <div class="about-widget">
+              </div>
+              <div class="widget-copyright">
+                <p>© 2022 <span>Machine Learning Tweet Sentiment Predictor</span>. Made by <img src="static/img/group5.png" alt="Logo"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--== End Footer Area Wrapper ==-->
+  
+
+  <!--== Start Side Menu ==-->
+  <aside class="off-canvas-wrapper">
+    <div class="off-canvas-inner">
+      <div class="off-canvas-overlay"></div>
+      <!-- Start Off Canvas Content Wrapper -->
+      <div class="off-canvas-content">
+        <!-- Off Canvas Header -->
+        <div class="off-canvas-header">
+          <div class="close-action">
+            <button class="btn-close"><i class="icon_close"></i></button>
+          </div>
+        </div>
+
+        <div class="off-canvas-item">
+          <!-- Start Asside Menu Wrapper -->
+          <div class="asside-navigation-area">
+            <ul class="asside-menu nav" id="assideMenuNav">
+              <li><a href="{{ url_for('home') }}">Home</a></li>
+              <li><a href="{{ url_for('team') }}">About</a></li>
+              <li><a href="#">Word Collage</a></li>
+              <li><a href="{{ url_for('summary') }}">Summary Page </a></li>
+            </ul>
+          </div>
+          <!-- End Asside Menu Wrapper -->
+        </div>
+        <!-- Off Canvas Footer -->
+        <div class="off-canvas-footer"></div>
+      </div>
+      <!-- End Off Canvas Content Wrapper -->
+    </div>
+  </aside>
+  <!--== End Side Menu ==--> 
+</div>
+
+<!--=======================Javascript============================-->
+
+<!--=== Modernizr Min Js ===-->
+<script src="static/js/modernizr.js"></script>
+<!--=== jQuery Min Js ===-->
+<script src="static/js/jquery-main.js"></script>
+<!--=== jQuery Migration Min Js ===-->
+<script src="static/js/jquery-migrate.js"></script>
+<!--=== Popper Min Js ===-->
+<script src="static/js/popper.min.js"></script>
+<!--=== Bootstrap Min Js ===-->
+<script src="static/js/bootstrap.min.js"></script>
+<!--=== jquery UI Min Js ===-->
+<script src="static/js/jquery-ui.min.js"></script>
+<!--=== Plugin Collection Js ===-->
+<script src="static/js/plugincollection.js"></script>
+
+<!--=== Custom Js ===-->
+<script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
