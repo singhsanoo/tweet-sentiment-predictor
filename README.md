@@ -74,6 +74,10 @@ After training and testing is concluded, there should be four Models (Logistic R
 # Landing Page
 ![Landing Page](https://user-images.githubusercontent.com/107283582/205543265-4e1cb5ab-699f-49eb-b481-c6d28b81639f.png)
 
+# Trained Models
+
+
+
 # Word Cloud Description
 
 A word cloud is a Visualization of a text meant to help understand information at a glance. It is a word image where each word's size is proportional to its importance, the more often it's mentioned within a given text words appear larger.
