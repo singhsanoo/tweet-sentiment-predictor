@@ -72,16 +72,17 @@
 
 We will use datasets to create a model with (various) features that will predict whether a tweet is positive or negative. Using Pandas, AWS, HTML/CSS/JS/Bootstrap, and NLTK they will be ranked and weighted to see which way they get classified.
 
-Project Summary: 
+# Project Summary: 
 
 The goal of this project was to see if it was possible to train a machine learning model to recognize the sentiment of a tweet. We began by discussing possible limitations. In the end, we wanted to host this model on Heroku. Since Heroku only supports scikit-learn models, we were unable to use PySpark or Tensorflow. However, we found that NLTK offers the same functionality and would work with Heroku. NLTK is a platform for building Python programs to work with human language data. It contains a suite of text processing libraries for classification, tokenization, lemmatization, etc.
 
-We built a processing pipeline with the following steps:
+# We built a processing pipeline with the following steps:
 
-Removing Punctuation - Since we were dealing with tweets, there were a host of punctuation marks we chose to eliminate. In today’s language, emoticons such as ‘:D’ could actually yield some sort of sentiment. However, as there were many other unnecessary punctuation marks, we chose to eliminate all of them.
+- Removing Punctuation - Since we were dealing with tweets, there were a host of punctuation marks we chose to eliminate. In today’s language, emoticons such as ‘:D’ could actually yield some sort of sentiment. However, as there were many other unnecessary punctuation marks, we chose to eliminate all of them.
 Tokenizing - This key step in the pipeline separates words so that each can be analyzed individually, usually by whitespace but in certain situations, a contraction such as I’m needs to be separated into the two words I am.
 Removing Stop Words - Stop words are common words that hold no sentiment and are thus unnecessary in training the model. Examples of stop words include: ‘a,’ ‘and,’ ‘or.’ 
-Lemmatization - This step identifies when two words have the same root and maps them to one word. For example: ‘code,’ ‘coding,’ ‘codes,’ and ‘coded’ will all get mapped to ‘code.’
+
+- Lemmatization - This step identifies when two words have the same root and maps them to one word. For example: ‘code,’ ‘coding,’ ‘codes,’ and ‘coded’ will all get mapped to ‘code.’
 Vectorization - This final step maps each word to a numerical value.
 
 The preprocessing took quite a bit of time. In total, it took almost three hours to run our data through steps 1-4 of the pipeline. To avoid doing these steps again, we saved the preprocessed data so that we could easily call it later. Then began training our models. At this step, we vectorized the data, which maps each word to a numerical value, and split the data into a training set and a testing set.
