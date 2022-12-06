@@ -70,7 +70,6 @@ After training and testing is concluded, there should be four Models (Logistic R
 - https://medium.com/mlearning-ai/how-to-deploy-an-nlp-machine-learning-model-with-flask-on-web-788c2825b792
 - https://github.com/conda-forge/lightgbm-feedstock
 - https://github.com/javedsha/text-classification
-- https://github.com/domilab/final-project-prediction-demo
 - https://towardsdatascience.com/create-word-cloud-into-any-shape-you-want-using-python-d0b88834bc32
 
 # Instructions
