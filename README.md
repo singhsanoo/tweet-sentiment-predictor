@@ -70,7 +70,7 @@
 
 We will use datasets to create a model with (various) features that will predict whether a tweet is positive or negative. Using Pandas, AWS, HTML/CSS/JS/Bootstrap, and NLTK they will be ranked and weighted to see which way they get classified.
 
-# Project Summary: 
+# Project Summary 
 
 The goal of this project was to see if it was possible to train a machine learning model to recognize the sentiment of a tweet. We began by discussing possible limitations. In the end, we wanted to host this model on Heroku. Since Heroku only supports scikit-learn models, we were unable to use PySpark or Tensorflow. However, we found that NLTK offers the same functionality and would work with Heroku. NLTK is a platform for building Python programs to work with human language data. It contains a suite of text processing libraries for classification, tokenization, lemmatization, etc.
 
@@ -96,7 +96,7 @@ For some reason, the displayed percentages wouldn’t round properly in certain 
 When we input a tweet that was completely removed in the preprocessing pipeline, it caused the prediction to fail. For example, since we removed all punctuation, a tweet such as ‘:D’ would be completely removed. Similarly, a list of only stop words such as ‘and or a’ would be completely removed. This meant that there was nothing left to vectorize which broke the prediction. To remedy this, we used Try/Except around the vectorizer which prompted the user to enter a new tweet if such a situation occurred.
 
 
-# Results:
+# Results
 
 After training and testing is concluded, there should be four Models (Logistic Regression Classifier, Stochastic Gradient Descent, Multinomial Naive Bayes, Light Gradient-Boosting) that can formulate Predictions. These are able to identify positive and negative tweets from a dataset. These models can be used with new information and can make a  determination on new entered  tweets and decide if the tweet is positive or negative with increasing levels of accuracy. The models can now be used with any new tweets collected  in the future for farther development.
 
