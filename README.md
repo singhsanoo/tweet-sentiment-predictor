@@ -2,7 +2,7 @@
 
 ![1,2,3](https://user-images.githubusercontent.com/93777016/205468893-845257df-4e81-41d3-94b1-d32e9e215afb.png)
 
-# Contributors (Group 5)
+# Contributors
 
 - Brandon Groenewold
 - Sanoo Singh
@@ -10,15 +10,15 @@
 - Nhan Tran
 - Adrian Wood
 
+# Website URL
+
+https://bcs-sentiment-predictor.herokuapp.com/
+
 # Datasets
 
-- [Kaggle](https://www.kaggle.com/datasets/kazanova/sentiment140) 
+- [Original](https://www.kaggle.com/datasets/kazanova/sentiment140)
 
-- [Original](https://drive.google.com/file/d/1ML1sG56MqlVX6oiNM4WDtPC3AFOO06y0/view?usp=share_link)
-
-- [Cleaned](https://drive.google.com/file/d/1RgRj4J9FJZ0YYN36nSx-umP9eZNPff94/view?usp=share_link)  
-
-- [Lemmatize](https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv) 
+- [Cleaned](https://uom-twitter-sentiment-analysis.s3.us-east-2.amazonaws.com/Lemmatize.csv) 
 
 
 
@@ -43,10 +43,16 @@
 - LGBMClassifier
 
 # Resources 
+
+- Speech and Language Processing by Daniel Jurafsky and James H. Martin
 - https://medium.com/mlearning-ai/how-to-deploy-an-nlp-machine-learning-model-with-flask-on-web-788c2825b792
 - https://github.com/conda-forge/lightgbm-feedstock
 - https://github.com/javedsha/text-classification
 - https://towardsdatascience.com/create-word-cloud-into-any-shape-you-want-using-python-d0b88834bc32
+- https://wall.alphacoders.com/big.php?i=473471
+- https://github.com/domilab/final-project-prediction-demo
+- https://themeforest.net/item/alexis-photography-responsive-bootstrap-5-template/30780160
+
 
 # Instructions
 - Clone this repo to your computer
@@ -55,6 +61,7 @@
 
 
 # Major Tasks
+
 - Apply ETL on the dataset
 - Preprocessing
 - Split Cleaned Data into Training Set and Testing Set
@@ -101,6 +108,7 @@ When we input a tweet that was completely removed in the preprocessing pipeline,
 After training and testing is concluded, there should be four Models (Logistic Regression Classifier, Stochastic Gradient Descent, Multinomial Naive Bayes, Light Gradient-Boosting) that can formulate Predictions. These are able to identify positive and negative tweets from a dataset. These models can be used with new information and can make a  determination on new entered  tweets and decide if the tweet is positive or negative with increasing levels of accuracy. The models can now be used with any new tweets collected  in the future for farther development.
 
 # Landing Page
+
 ![Landing Page](static/img/photos/landing_page.png)
 
 # Trained Models
@@ -118,20 +126,21 @@ After training and testing is concluded, there should be four Models (Logistic R
 
 # Word Cloud Description
 
-A word cloud is a Visualization of a text meant to help understand information at a glance. It is a word image where each word's size is proportional to its importance, the more often it's mentioned within a given text words appear larger.
+A word cloud is a visualization of text meant to help understand information at a glance. It is a word image in which each words' size is proportional to its importance. That is, the more often it's mentioned within a given text, the larger it will appear.
 
-Being able to see the tweet information was helpful during the training and testing of the models. After looking at the word clouds you could see there are some words that are used in both positive and negative tweets such as "I'm". This could be caused by people using it in both instances such as "I'm happy" and "I'm sad".
+Being able to see the tweet information was helpful during the training and testing of the models. After looking at the word clouds, you could see there are some strings that are used in both positive and negative tweets such as "I'm." This makes sense as people use it in different ways, such as “I'm happy" versus "I'm sad."
 
 
-# Word Cloud for positive tweets
 
-upon looking at the word clouds with positive tweets, we found that some of the positive words were a little out of the ordinary like "kackered" and some random numbers. Some of these might have been able to make it in the positive words based on the words around them or the whole feel of the tweet, Other than the words themself.
+# Word Cloud for Positive Tweets
+
+Upon looking at the word clouds containing positive tweets, we found that some of the words were a little out of the ordinary like "kackered" as well as some random numbers. These strange words might have been included based on the words around them or the overall sentiment of the tweet.
 
 ![Screenshot 2022-12-03 220951](https://user-images.githubusercontent.com/93777016/205473855-ca189b2c-91d7-4028-bc5c-527cc392a6c6.png)
 
 
-# Word Cloud  for negative tweets
+# Word Cloud  for Negative Tweets
 
-Just like with the positive tweets some of the words the models considered negative were somewhat surprising such as "cool" or "hope". Words that normally have a positive sentiment. After discussing it with the group, we concluded that some of these words might have made it in the negative tweets because they could have been used to express expectations that might not have been met.
+Some of the words that appeared in the negative cloud, such as “cool” and “hope,” were surprising as well. These words normally have a positive sentiment. Possible explanations for this may have been that the words were used to express expectations that might not have been met or used sarcastically.
 
 ![Screenshot 2022-12-03 220920](https://user-images.githubusercontent.com/93777016/205473869-1ee87d33-ec99-499b-a704-ad0e62bdf200.png)
